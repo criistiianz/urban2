@@ -12,7 +12,7 @@
 .home-container {
   display: flex;
   min-height: 100vh;
-  background: transparent; /* sin overlay */
+  background: transparent; 
   color: white;
 }
 
@@ -36,10 +36,10 @@
 }
 
 .sidebar li {
-  flex-grow: 1;          /* para que cada li ocupe espacio equitativo */
+  flex-grow: 1;          
   margin: 0;
   display: flex;
-  align-items: center;   /* centra el contenido verticalmente */
+  align-items: center;   
   justify-content: center;
 }
 
@@ -58,10 +58,10 @@
   user-select: none;
   letter-spacing: 0.04em;
   text-align: center;
-  padding: 10px 1rem;  /* padding más pequeño para reducir altura */
-  max-height: 45px;    /* limita altura visible */
+  padding: 10px 1rem;  
+  max-height: 45px;    
   line-height: 1.2;
-  width: 100%;         /* para que el link ocupe todo el ancho del li */
+  width: 100%;         
 }
 
 .sidebar a:hover {

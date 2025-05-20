@@ -1,0 +1,42 @@
+.producto-lista {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.producto-card {
+  background: #2c3e50;
+  color: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  width: 280px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.producto-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0,0,0,0.9);
+}
+
+.producto-imagen {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.producto-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.producto-nombre {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
