@@ -1,0 +1,79 @@
+.background-container {
+  background-image: url('/urban5.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  filter: brightness(1);
+}
+
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  background: transparent; /* sin overlay */
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.sidebar li {
+  flex-grow: 1;          /* para que cada li ocupe espacio equitativo */
+  margin: 0;
+  display: flex;
+  align-items: center;   /* centra el contenido verticalmente */
+  justify-content: center;
+}
+
+.sidebar a {
+  display: inline-block;
+  font-size: 1.4rem;
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+  color: #00ffcc;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow:
+    4px 4px 8px #0b0b0b,
+    -4px -4px 8px #1f1f1f;
+  transition: all 0.3s ease;
+  user-select: none;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 10px 1rem;  /* padding más pequeño para reducir altura */
+  max-height: 45px;    /* limita altura visible */
+  line-height: 1.2;
+  width: 100%;         /* para que el link ocupe todo el ancho del li */
+}
+
+.sidebar a:hover {
+  background: linear-gradient(145deg, #00ffcc, #00ccb3);
+  color: #121212;
+  box-shadow:
+    inset 4px 4px 8px #00b399,
+    inset -4px -4px 8px #00ffe0;
+  transform: translateY(-3px);
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
