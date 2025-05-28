@@ -47,7 +47,7 @@
   display: inline-block;
   font-size: 1.4rem;
   background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
-  color: #00ffcc;
+  color: #f39c12;
   font-weight: 700;
   text-decoration: none;
   border-radius: 12px;
@@ -65,11 +65,11 @@
 }
 
 .sidebar a:hover {
-  background: linear-gradient(145deg, #00ffcc, #00ccb3);
+  background: linear-gradient(145deg, #f39c12, #f39c12);
   color: #121212;
   box-shadow:
-    inset 4px 4px 8px #00b399,
-    inset -4px -4px 8px #00ffe0;
+    inset 4px 4px 8px #b16e03,
+    inset -4px -4px 8px #f39c12;
   transform: translateY(-3px);
 }
 
