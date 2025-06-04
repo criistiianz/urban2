@@ -35,9 +35,11 @@ const Clientes = () => {
             ))}
           </ul>
         </div>
+        
       </div>
     </div>
-  );
+     
+ );
 };
 
 export default Clientes;

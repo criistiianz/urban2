@@ -10,7 +10,7 @@ const productos = [
     precio: 25000,
     tallas: ['S', 'M', 'L', 'XL'],
     stock: 12,
-    imagen: 'https://via.placeholder.com/100?text=Camiseta',
+    imagen: '/camiseta1.jpeg', 
     categoria: 'Camiseta',
   },
   {
@@ -20,7 +20,7 @@ const productos = [
     precio: 85000,
     tallas: ['M', 'L'],
     stock: 5,
-    imagen: 'https://via.placeholder.com/100?text=Chaqueta',
+    imagen: '/chaqueta.jpeg',
     categoria: 'Chaqueta',
   },
   {
@@ -30,10 +30,42 @@ const productos = [
     precio: 40000,
     tallas: ['S', 'M', 'L', 'XL', 'XXL'],
     stock: 20,
-    imagen: 'https://via.placeholder.com/100?text=Pantalón',
+    imagen: '/jogger.jpeg',
     categoria: 'Pantalón',
   },
+  {
+  id: 4,
+  nombre: 'Sudadera Oversize',
+  descripcion: 'Sudadera amplia con capucha, estilo urbano',
+  precio: 60000,
+  tallas: ['S', 'M', 'L'],
+  stock: 15,
+  imagen: '/sudadera.jpeg',
+  categoria: 'Sudadera',
+},
+{
+  id: 5,
+  nombre: 'Gorra Snapback',
+  descripcion: 'Gorra urbana ajustable con diseño bordado',
+  precio: 20000,
+  tallas: ['Única'],
+  stock: 30,
+  imagen: '/gorra.jpeg',
+  categoria: 'Gorra',
+},
+{
+  id: 6,
+  nombre: 'Zapatillas Street',
+  descripcion: 'Zapatillas cómodas para uso urbano diario',
+  precio: 95000,
+  tallas: ['38', '39', '40', '41', '42'],
+  stock: 10,
+  imagen: '/zapatillas.webp',
+  categoria: 'Calzado',
+},
+
 ];
+
 
 const getEmoji = (categoria) => {
   switch(categoria) {
@@ -79,6 +111,7 @@ const Productos = () => {
           </div>
 
         </div>
+        
       </div>
     </div>
   );

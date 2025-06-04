@@ -1,0 +1,28 @@
+.usuarios-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #ecf0f1;
+  font-size: 1rem;
+}
+
+.usuarios-table thead {
+  background-color: #f39c12;
+  color: #1c2833;
+}
+
+.usuarios-table th,
+.usuarios-table td {
+  padding: 12px 15px;
+  border: 1px solid #f39c12;
+  text-align: left;
+}
+
+.usuarios-table tbody tr:hover {
+  background-color: rgba(243, 156, 18, 0.3);
+  cursor: default;
+}
+
+.usuarios-table tbody tr:nth-child(even) {
+  background-color: rgba(52, 73, 94, 0.5);
+}
