@@ -2,23 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './contenedores/Home'; 
-import Clientes from './pages/Clientes'; 
-import Estadisticas from './pages/Estadisticas'; 
-import Productos from './pages/Productos'; 
-import Usuarios from './pages/Usuarios';
-import Ventas from './pages/Ventas';
-import AccesoDenegado from './pages/AccesoDenegado';
+import Home from './pages/home/Home'; 
+import Clientes from './pages/clientes/Clientes'; 
+import Estadisticas from './pages/estadisticas/Estadisticas'; 
+import Productos from './pages/productos/Productos'; 
+import Usuarios from './pages/usuarios/Usuarios';
+import Ventas from './pages/ventas/Ventas';
+import AccesoDenegado from './pages/accesodenegado/AccesoDenegado';
 import { AuthProvider } from './context/AuthContext';
 import PrivateRoute from './components/PrivateRoute';
+import Login from './pages/login/Login';
 
-import './css/index.css';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+
           <Route path="/" element={<Home />} />
           <Route path="/Productos" element={<Productos />} />
 

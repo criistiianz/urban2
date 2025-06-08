@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/clientes.css';
+import './clientes.css';
 
 const Clientes = () => {
   const clientes = [

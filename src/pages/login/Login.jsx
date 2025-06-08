@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
-import '../css/login.css'; 
+import { useAuth } from '../../context/AuthContext';
+import './login.css'; // debe estar en la misma carpeta
 
 const Login = () => {
   const [usuario, setUsuario] = useState('');
@@ -15,16 +15,16 @@ const Login = () => {
     const user = login(usuario, contraseña);
 
     if (user) {
-      navigate('/'); // se Redirige a Home si el login fue exitoso
+      navigate('/');
     } else {
       setError('Usuario o contraseña incorrectos');
     }
   };
 
   return (
-    <div className="login-container">
+    <div className="login-page-container">
       <form onSubmit={handleSubmit} className="login-form">
-        <h2>Iniciar Sesión</h2>
+        <h3>Iniciar Sesión</h3>
         <input
           type="text"
           placeholder="Usuario"
@@ -39,8 +39,8 @@ const Login = () => {
           onChange={(e) => setContraseña(e.target.value)}
           required
         />
-        {error && <p className="error">{error}</p>}
-        <button type="submit">Entrar</button>
+        {error && <p className="error-msg">{error}</p>}
+        <button className="home-btn" type="submit">Entrar</button>
         <a href="#">¿No tiene una cuenta?</a>
       </form>
     </div>

@@ -4,11 +4,20 @@
   margin-top: 20px;
   color: #ecf0f1;
   font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  
+  
 }
 
 .usuarios-table thead {
   background-color: #f39c12;
   color: #1c2833;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
+  
+  
+
 }
 
 .usuarios-table th,
@@ -16,10 +25,13 @@
   padding: 12px 15px;
   border: 1px solid #f39c12;
   text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  
 }
 
 .usuarios-table tbody tr:hover {
-  background-color: rgba(243, 156, 18, 0.3);
+  background-color: rgba(170, 174, 177, 0.5);
   cursor: default;
 }
 

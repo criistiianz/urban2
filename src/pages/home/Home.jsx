@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
-import '../css/home.css';
+import { AuthContext } from '../../context/AuthContext';
+import './Home.css';
+
 
 const Home = () => {
   const { user, login, logout } = useContext(AuthContext);
@@ -16,7 +17,7 @@ const Home = () => {
   const [stockTotal, setStockTotal] = useState(520);
 
   useEffect(() => {
-    // Simula carga de datos desde API
+    
     fetch('/api/productos/count')
       .then(res => res.json())
       .then(data => setTotalProductos(data.total))

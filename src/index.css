@@ -1,5 +1,5 @@
 .background-container {
-  background-image: url('/urban5.webp');
+  background-image: url('/src/assets/urban5.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -77,3 +77,15 @@
   flex: 1;
   padding: 2rem;
 }
+
+.content h1,
+.content h2,
+.content h3 {
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+
+

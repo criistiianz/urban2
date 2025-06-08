@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/usuarios.css'; 
+import './usuarios.css';
 
 
 const Usuarios = () => {

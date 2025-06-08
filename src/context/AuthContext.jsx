@@ -1,10 +1,10 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
 export const AuthContext = createContext();
 
 const usuariosDemo = [
   { username: 'admin', password: 'admin123', role: 'admin' },
- ];
+];
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -28,3 +28,5 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+
+export const useAuth = () => useContext(AuthContext);

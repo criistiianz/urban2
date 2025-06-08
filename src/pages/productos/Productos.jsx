@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/producto.css';
+import './producto.css';
 
 const productos = [
   {
@@ -10,7 +10,7 @@ const productos = [
     precio: 25000,
     tallas: ['S', 'M', 'L', 'XL'],
     stock: 12,
-    imagen: '/camiseta1.jpeg', 
+    imagen: 'src/assets/camiseta1.jpeg', 
     categoria: 'Camiseta',
   },
   {
@@ -20,7 +20,7 @@ const productos = [
     precio: 85000,
     tallas: ['M', 'L'],
     stock: 5,
-    imagen: '/chaqueta.jpeg',
+    imagen: 'src/assets/chaqueta.jpeg',
     categoria: 'Chaqueta',
   },
   {
@@ -30,7 +30,7 @@ const productos = [
     precio: 40000,
     tallas: ['S', 'M', 'L', 'XL', 'XXL'],
     stock: 20,
-    imagen: '/jogger.jpeg',
+    imagen: 'src/assets/jogger.jpeg',
     categoria: 'Pantalón',
   },
   {
@@ -40,7 +40,7 @@ const productos = [
   precio: 60000,
   tallas: ['S', 'M', 'L'],
   stock: 15,
-  imagen: '/sudadera.jpeg',
+  imagen: 'src/assets/sudadera.jpeg',
   categoria: 'Sudadera',
 },
 {
@@ -50,7 +50,7 @@ const productos = [
   precio: 20000,
   tallas: ['Única'],
   stock: 30,
-  imagen: '/gorra.jpeg',
+  imagen: 'src/assets/gorra.jpeg',
   categoria: 'Gorra',
 },
 {
@@ -60,7 +60,7 @@ const productos = [
   precio: 95000,
   tallas: ['38', '39', '40', '41', '42'],
   stock: 10,
-  imagen: '/zapatillas.webp',
+  imagen: 'src/assets/zapatillas.webp',
   categoria: 'Calzado',
 },
 

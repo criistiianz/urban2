@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';  
 import { VictoryPie } from 'victory';
-import '../css/estadisticas.css'; 
+import './estadisticas.css'; 
 
 const Estadisticas = () => {
   const datosVentas = [
