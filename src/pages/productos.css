@@ -6,8 +6,9 @@
 }
 
 .producto-card {
-   background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), 
+              0 0 12px rgba(241, 196, 15, 0.7); /* ← SOMBRA AMARILLA AÑADIDA */
   color: #ecf0f1;
   width: 280px;
   padding: 15px;
@@ -15,12 +16,12 @@
   gap: 15px;
   transition: transform 0.3s ease;
   cursor: pointer;
-  
 }
 
 .producto-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0,0,0,0.9);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9),
+              0 0 20px rgba(241, 196, 15, 0.9); /* ← SOMBRA AMARILLA MÁS FUERTE AL HOVER */
 }
 
 .producto-imagen {

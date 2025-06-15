@@ -1,0 +1,74 @@
+.pagos-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  box-shadow: 0 0 15px 4px rgba(243, 156, 18, 0.8);
+  border: 1px solid #f39c12;
+}
+
+.pagos-table th,
+.pagos-table td {
+  padding: 10px;
+  border: 1px solid #f39c12;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #f0f0f0; /* texto claro */
+}
+
+.pagos-table th {
+  background-color: #1a1a1a;
+  color: #f39c12;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.7);
+}
+
+.confirmado {
+  background-color: #f39c12;
+  color: #1a1a1a; /* texto oscuro sobre fondo claro */
+  font-weight: bold;
+}
+
+.pendiente {
+  background-color: #f1c40f;
+  color: #1a1a1a; /* texto oscuro sobre fondo claro */
+  font-weight: bold;
+}
+
+.btn-confirmar {
+  background-color: #f39c12;
+  color: #1a1a1a;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 0;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 8px rgba(243, 156, 18, 0.8);
+}
+
+.btn-confirmar:hover {
+  background-color: #e67e22;
+  box-shadow: 0 0 12px rgba(243, 156, 18, 1);
+}
+
+.btn-cancelar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 0;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 8px rgba(231, 76, 60, 0.6);
+}
+
+.btn-cancelar:hover {
+  background-color: #c0392b;
+  box-shadow: 0 0 12px rgba(192, 57, 43, 0.9);
+}

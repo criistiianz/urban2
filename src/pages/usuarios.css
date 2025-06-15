@@ -1,0 +1,36 @@
+.usuarios-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #f0f0f0;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.3); /* igual que pagos */
+}
+
+.usuarios-table thead {
+  background-color: #1a1a1a;
+  color: #f39c12;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.3); /* igual que pagos */
+}
+
+.usuarios-table th,
+.usuarios-table td {
+  padding: 12px 15px;
+  border: 1px solid #555;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: none; 
+}
+
+.usuarios-table tbody tr:hover {
+  background-color: rgba(170, 174, 177, 0.3); 
+  cursor: default;
+}
+
+.usuarios-table tbody tr:nth-child(even) {
+  background-color: rgba(52, 73, 94, 0.3);
+}

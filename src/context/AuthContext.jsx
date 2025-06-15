@@ -1,32 +1,50 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
-export const AuthContext = createContext();
-
-const usuariosDemo = [
-  { username: 'admin', password: 'admin123', role: 'admin' },
-];
+// Contexto y hook para usarlo fácilmente
+const AuthContext = createContext();
+export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  // Estado usuario: null = no autenticado
+  const [usuario, setUsuario] = useState(null);
 
-  const login = (username, password) => {
-    const usuario = usuariosDemo.find(
-      u => u.username === username && u.password === password
-    );
-    if (usuario) {
-      setUser({ username: usuario.username, role: usuario.role });
-      return true;
+  // Opcional: persistir sesión en localStorage para que no se pierda al recargar
+  useEffect(() => {
+    const userStorage = localStorage.getItem('usuario');
+    if (userStorage) {
+      setUsuario(JSON.parse(userStorage));
     }
-    return false;
+  }, []);
+
+  useEffect(() => {
+    if (usuario) {
+      localStorage.setItem('usuario', JSON.stringify(usuario));
+    } else {
+      localStorage.removeItem('usuario');
+    }
+  }, [usuario]);
+
+  // Función login que valida credenciales y establece usuario
+  const login = (nombreUsuario, clave) => {
+    // Aquí podrías hacer llamada real a backend
+    if (nombreUsuario === 'admin' && clave === '1234') {
+      const usuarioLogueado = { nombre: 'Administrador', rol: 'admin' };
+      setUsuario(usuarioLogueado);
+      return { exito: true, usuario: usuarioLogueado };
+    }
+    return { exito: false, mensaje: 'Usuario o contraseña incorrectos' };
   };
 
-  const logout = () => setUser(null);
+  // Logout borra el usuario
+  const logout = () => {
+    setUsuario(null);
+  };
+
+  const autenticado = !!usuario;
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ usuario, login, logout, autenticado }}>
       {children}
     </AuthContext.Provider>
   );
 };
-
-export const useAuth = () => useContext(AuthContext);
