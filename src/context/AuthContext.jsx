@@ -1,14 +1,11 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-// Contexto y hook para usarlo fácilmente
 const AuthContext = createContext();
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
-  // Estado usuario: null = no autenticado
   const [usuario, setUsuario] = useState(null);
 
-  // Opcional: persistir sesión en localStorage para que no se pierda al recargar
   useEffect(() => {
     const userStorage = localStorage.getItem('usuario');
     if (userStorage) {
@@ -24,9 +21,7 @@ export const AuthProvider = ({ children }) => {
     }
   }, [usuario]);
 
-  // Función login que valida credenciales y establece usuario
   const login = (nombreUsuario, clave) => {
-    // Aquí podrías hacer llamada real a backend
     if (nombreUsuario === 'admin' && clave === '1234') {
       const usuarioLogueado = { nombre: 'Administrador', rol: 'admin' };
       setUsuario(usuarioLogueado);
@@ -35,7 +30,7 @@ export const AuthProvider = ({ children }) => {
     return { exito: false, mensaje: 'Usuario o contraseña incorrectos' };
   };
 
-  // Logout borra el usuario
+ 
   const logout = () => {
     setUsuario(null);
   };

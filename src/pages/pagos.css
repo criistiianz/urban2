@@ -14,7 +14,7 @@
   border: 1px solid #f39c12;
   text-align: center;
   background-color: #1a1a1a;
-  color: #f0f0f0; /* texto claro */
+  color: #f0f0f0; 
 }
 
 .pagos-table th {
@@ -28,13 +28,13 @@
 
 .confirmado {
   background-color: #f39c12;
-  color: #1a1a1a; /* texto oscuro sobre fondo claro */
+  color: #1a1a1a; 
   font-weight: bold;
 }
 
 .pendiente {
   background-color: #f1c40f;
-  color: #1a1a1a; /* texto oscuro sobre fondo claro */
+  color: #1a1a1a; 
   font-weight: bold;
 }
 
